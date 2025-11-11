@@ -67,10 +67,9 @@ Mood Tracker/
   Menggunakan *prepared statements* untuk mencegah SQL Injection dan menjaga integritas data saat memproses query database.
 
 ## Akun Demo (Untuk Mencoba)
-  Setelah mengimpor file database.sql, Anda bisa langsung login menggunakan akun demo yang sudah disiapkan untuk melihat fungsionalitas website dan data dummy yang ada.
-
-Username: `coba`
-Password: `123456`
+  Setelah mengimpor file `database.sql`, kamu bisa langsung login menggunakan akun demo yang sudah disiapkan untuk melihat fungsionalitas website dan data dummy yang ada.
+- Username: `coba`
+- Password: `123456`
 
 ## Dokumentasi
 
