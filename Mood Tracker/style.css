@@ -1,0 +1,311 @@
+:root {
+    /* Palet Warna Ungu Vibrant */
+    --bg-main: #f5f3ff;           /* Latar ungu muda cerah */
+    --primary-lightest: #ede9fe;  /* Ungu paling muda untuk latar elemen */
+    --primary-light: #d8b4fe;     /* Ungu lavender cerah untuk border */
+    --primary: #9333ea;           /* UNGU VIBRANT UTAMA */
+    --primary-dark: #7e22ce;      /* Ungu gelap tegas untuk teks penting/hover */
+    --text-dark: #3b0764;         /* Teks ungu hampir hitam agar terbaca jelas */
+
+    --white: #ffffff;
+    --danger: #dc2626;            /* Merah cerah untuk tombol hapus */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Balik ke Poppins biar rapi */
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 30px; 
+    line-height: 1.6;
+    /*  pola titik-titik halus */
+    background-image: radial-gradient(var(--primary-light) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+h1, h2, h3, .home-menu a {
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 16px; /* Sudut sedikit lebih bulat */
+    /* Bayangan ungu vibrant tegas */
+    box-shadow: 0 10px 30px -5px rgba(147, 51, 234, 0.25);
+    border: 2px solid var(--primary-lightest);
+    position: relative;
+    z-index: 1;
+}
+
+/* --- HEADER --- */
+header {
+    margin-bottom: 40px;
+    border-bottom: 3px dashed var(--primary-light); /* Garis putus-putus lebih tebal */
+    padding-bottom: 25px;
+}
+
+header h1 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 2.8em;
+    letter-spacing: -1px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary); /* Navigasi Ungu */
+    padding: 15px 30px;
+    border-radius: 12px;
+    color: var(--white);
+    box-shadow: 0 5px 15px -3px rgba(147, 51, 234, 0.4);
+}
+
+.user-welcome {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--primary-lightest);
+}
+
+.menu-links a, .auth-links a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px 20px;
+    margin-left: 8px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.menu-links a:hover, .menu-links a.active {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.logout-btn {
+    background-color: var(--danger) !important;
+    opacity: 0.9;
+}
+.logout-btn:hover {
+    opacity: 1;
+}
+
+/* --- HOME MENU --- */
+.home-menu {
+    max-width: 450px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.home-menu h2 {
+    color: var(--primary);
+    margin-bottom: 35px;
+    border-bottom: none;
+    font-size: 2.2em;
+}
+
+.simple-menu-list a {
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 18px 30px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 1.3em;
+    transition: 0.2s;
+    box-shadow: 0 4px 0px var(--primary-dark); /* Efek tombol 3D tegas */
+}
+
+.simple-menu-list a:hover {
+    transform: translateY(4px); /* Efek tombol ditekan */
+    box-shadow: none;
+    background-color: var(--primary-dark);
+}
+
+/* --- FORMULIR & TABEL --- */
+h2 {
+    color: var(--primary);
+    font-weight: 800;
+    border-bottom: 4px solid var(--primary-light);
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 35px;
+    font-size: 2em;
+}
+
+label {
+    color: var(--primary-dark);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 25px;
+    border: 2px solid var(--primary-light);
+    border-radius: 12px;
+    background-color: #faf5ff;
+    color: var(--text-dark);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background-color: var(--white);
+    box-shadow: 0 0 0 4px rgba(147, 51, 234, 0.15);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 5px 0px var(--primary-dark); /* Efek 3D */
+}
+
+button[type="submit"]:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
+/* Style untuk Error Message (Alert) */
+.alert {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #fecaca;
+}
+.success-alert {
+    background-color: #dcfce7;
+    color: #166534;
+    border-color: #bbf7d0;
+}
+
+/* Tabel Vibrant */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 35px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid var(--primary-light);
+}
+
+th {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 18px;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+td {
+    padding: 18px;
+    border-bottom: 2px solid var(--primary-lightest);
+    background-color: var(--white);
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+tr:hover td {
+    background-color: #faf5ff;
+}
+
+/* Link Aksi di Tabel */
+td a { font-family: 'Poppins', sans-serif; }
+td a[href*="edit"] {
+    background-color: var(--primary-lightest);
+    color: var(--primary);
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9em;
+    margin-right: 8px;
+    transition: 0.2s;
+}
+td a[href*="edit"]:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+td a[href*="delete"] {
+    background-color: #fee2e2;
+    color: var(--danger);
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9em;
+    transition: 0.2s;
+}
+td a[href*="delete"]:hover {
+    background-color: var(--danger);
+    color: var(--white);
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: var(--primary-light);
+    margin: 45px 0;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+/* Link Batal di tengah */
+form a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    opacity: 0.8;
+}
+form a:hover { opacity: 1; text-decoration: underline; }
+
+@media (max-width: 768px) {
+    nav { flex-direction: column; gap: 15px; padding: 20px; }
+    .menu-links a { display: block; margin: 5px 0; text-align: center; }
+    .container { padding: 30px 20px; }
+}
+
+input[type="color"] {
+    -webkit-appearance: none; appearance: none; border: 2px solid var(--primary-light);
+    width: 100%; height: 60px; padding: 8px; background-color: var(--white); cursor: pointer; border-radius: 12px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper { padding: 0; }
+input[type="color"]::-webkit-color-swatch { border: none; border-radius: 8px; }
