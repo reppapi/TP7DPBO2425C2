@@ -50,7 +50,7 @@ Mood Tracker/
 ## Penjelasan Umum
 - **config/** — Menyimpan konfigurasi koneksi ke database.  
 - **class/** — Menampung semua file class PHP yang menangani logika bisnis, baik itu **Controller** (pengatur alur) maupun **Model** (urusan ke database).
-- **database/** — Berisi file .sql yang memuat struktur tabel dan data dummy.  
+- **database/** — Berisi file `.sql` yang memuat struktur tabel dan data dummy.  
 - **views/** — Menampilkan antarmuka pengguna (halaman HTML/PHP). 
 - **index.php** — File router utama yang menerima semua permintaan dan mengarahkannya ke Controller yang tepat.
 - **style.css** — File styling untuk antarmuka.
@@ -69,8 +69,8 @@ Mood Tracker/
 ## Akun Demo (Untuk Mencoba)
   Setelah mengimpor file database.sql, Anda bisa langsung login menggunakan akun demo yang sudah disiapkan untuk melihat fungsionalitas website dan data dummy yang ada.
 
-Username: coba
-Password: 123456
+Username: `coba`
+Password: `123456`
 
 ## Dokumentasi
 
