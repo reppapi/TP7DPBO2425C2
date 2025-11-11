@@ -73,3 +73,6 @@ Mood Tracker/
 
 ## Dokumentasi
 
+Klik thumbnail di bawah untuk menonton demo program:  
+
+[![Demo Program](https://img.youtube.com/vi/bi3qCqzKSkM/0.jpg)](https://youtu.be/bi3qCqzKSkM)
